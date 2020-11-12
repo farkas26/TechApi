@@ -5,7 +5,9 @@ Se utilizo tecnologia .Net para crear el WEB API
 Se utilizo una base de datos SQL Server 
 
 #Instalacion#
-El WebApi ya esta publicado y la URL es:https://servicioswebelaniin.azurewebsites.net/
+El WebApi ya esta publicado en Azure y la URL es:https://servicioswebelaniin.azurewebsites.net/
+
+Pero si se desea realizar la publicacion se deben seguir los siguientes pasos:
 
 1.Se debe abrir el proyecto ServiciosWeb.sln en Visual Studio y generar el publish el proyecto se encuentra en la ruta \TechApi\ServiciosWeb
 2.Desplegar el publish en un servidor Windows Server 2016 en adelante
@@ -13,6 +15,7 @@ El WebApi ya esta publicado y la URL es:https://servicioswebelaniin.azurewebsite
 4.Configurar el SitioWeb en el IIS 
 5.Copiar el publish en la carpeta creada desde el IIS
 6.De igual forma se dejara el publish del proyecto en el repositorio
+7.Modificar la cadena de conexion segun la base en donde se correra al script de migración de datos.
 
 
 #Migration#
