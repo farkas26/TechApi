@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "6af7c5f0-399a-4df4-9246-a6f2d67333bf",
+		"name": "TechCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ObtenerUsuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Obtiene todos los usuarios registrados a la fecha"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:61658/Catalogo/User/Login?email=admin@gmail.com&password=adminpass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:61658/Catalogo/User/Login?email=admin@gmail.com&password=adminpass",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61658",
+					"path": [
+						"Catalogo",
+						"User",
+						"Login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "adminpass"
+						}
+					]
+				},
+				"description": "Proceso de Login con campo email y password"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:61658/Catalogo/User/Registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"farkas\",\r\n  \"password\": \"1234\",\r\n  \"name\": \"francisco\",\r\n  \"number\": \"1234\",\r\n  \"birthdate\": \"2020-11-11\",\r\n  \"email\": \"franciscocruz@gmail.com\",\r\n  \"token\": \"null\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:61658/Catalogo/User/Registro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61658",
+					"path": [
+						"Catalogo",
+						"User",
+						"Registro"
+					]
+				},
+				"description": "Registro de usuario con sus respectivas validaciones de campo dentro del Api"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:61658/Catalogo/User/Recuperacion?emailDestino=franciscocruz2610@gmail.com&emailOrigen=ingresar un correo gmail de pruebas&password=ingresar contraseña",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:61658/Catalogo/User/Recuperacion?emailDestino=franciscocruz2610@gmail.com&emailOrigen=ingresar un correo gmail de pruebas&password=ingresar contraseña",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61658",
+					"path": [
+						"Catalogo",
+						"User",
+						"Recuperacion"
+					],
+					"query": [
+						{
+							"key": "emailDestino",
+							"value": "franciscocruz2610@gmail.com"
+						},
+						{
+							"key": "emailOrigen",
+							"value": "ingresar un correo gmail de pruebas"
+						},
+						{
+							"key": "password",
+							"value": "ingresar contraseña"
+						}
+					]
+				},
+				"description": "End Point para recuperar contraseña, se dejo que recibiera un correo Origen y Contraseña para que se pueda realizar la prueba."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:61658/Catalogo/User/ModificarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 2,\r\n  \"username\": \"farkas\",\r\n  \"password\": \"123admin\",\r\n  \"name\": \"francisco\",\r\n  \"number\": 12345,\r\n  \"birthdate\": \"2020-11-11\",\r\n  \"email\": \"francisco@gmail.com\",\r\n  \"token\": \"null\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:61658/Catalogo/User/ModificarUsuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61658",
+					"path": [
+						"Catalogo",
+						"User",
+						"ModificarUsuario"
+					]
+				},
+				"description": "Modificar Usuario registrado"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:61658/Catalogo/User/EliminarUsuario?id=2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:61658/Catalogo/User/EliminarUsuario?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61658",
+					"path": [
+						"Catalogo",
+						"User",
+						"EliminarUsuario"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "borrar usuario de la base de datos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:61658/Catalogo/Producto/ObtenerProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:61658/Catalogo/Producto/ObtenerProductos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61658",
+					"path": [
+						"Catalogo",
+						"Producto",
+						"ObtenerProductos"
+					]
+				},
+				"description": "Obtiene todos los productos registrados en la base de datos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:61658/Catalogo/Producto/Registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sku\": \"K123\",\r\n  \"nombre\": \"Audifonos\",\r\n  \"cantidad\": \"24\",\r\n  \"precio\": 12.50,\r\n  \"descripcion\": \"Audifonos Inalambricos SkullCandy\",\r\n  \"imagen\": \"QEA=\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:61658/Catalogo/Producto/Registro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61658",
+					"path": [
+						"Catalogo",
+						"Producto",
+						"Registro"
+					]
+				},
+				"description": "EndPoint para ingresar un nuevo producto a la base de datos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:61658/Catalogo/Producto/ModificarProducto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 2,\r\n  \"sku\": \"SK20\",\r\n  \"nombre\": \"Audifonos Skullcandy\",\r\n  \"cantidad\": \"25\",\r\n  \"precio\": 50,\r\n  \"descripcion\": \"Audifonos inalambricos Skullcandy\",\r\n  \"imagen\": \"QEA=\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:61658/Catalogo/Producto/ModificarProducto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61658",
+					"path": [
+						"Catalogo",
+						"Producto",
+						"ModificarProducto"
+					]
+				},
+				"description": "EndPoint para modificar productos en la base de datos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:61658/Catalogo/Producto/EliminarProducto?id=2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:61658/Catalogo/Producto/EliminarProducto?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61658",
+					"path": [
+						"Catalogo",
+						"Producto",
+						"EliminarProducto"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Eliminar producto de la base de datos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:61658/Catalogo/Producto/BusquedaProductos?nombre=\"\"&SKU=sk20",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:61658/Catalogo/Producto/BusquedaProductos?nombre=\"\"&SKU=sk20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61658",
+					"path": [
+						"Catalogo",
+						"Producto",
+						"BusquedaProductos"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "\"\""
+						},
+						{
+							"key": "SKU",
+							"value": "sk20"
+						}
+					]
+				},
+				"description": "Busqueda de productos por nombre o por SKU, case sensitive"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

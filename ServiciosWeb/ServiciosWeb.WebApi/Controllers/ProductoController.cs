@@ -203,6 +203,31 @@ namespace ServiciosWeb.WebApi.Controllers
             return response;
         }
 
-
+        [HttpPost]
+        [Route("Catalogo/Producto/BusquedaProductos")]
+        [ActionName("BusquedaProducto")]
+        public GenericListResponse<Producto> GetProduct(string nombre , string SKU)
+        {
+            GenericListResponse<Producto> response;
+            BPM_SIEEntities BD = new BPM_SIEEntities();
+            try
+            {
+                var registro = BD.Producto.Where(x => x.nombre.Equals(nombre, StringComparison.CurrentCultureIgnoreCase) || x.SKU.Equals(SKU, StringComparison.CurrentCultureIgnoreCase));
+                response = new GenericListResponse<Producto>
+                {
+                    Status = new ResponseStatus { HttpCode = HttpStatusCode.OK },
+                    Items = registro.ToList()
+                };
+            }
+            catch (Exception ex)
+            {
+                response = new GenericListResponse<Producto>
+                {
+                    Status = new ResponseStatus { HttpCode = HttpStatusCode.InternalServerError, Message = ex.Message },
+                    Items = new List<Producto>()
+                };
+            }
+            return response;
+        }
     }
 }
