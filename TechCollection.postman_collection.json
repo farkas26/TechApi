@@ -37,12 +37,13 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:61658/Catalogo/User/ObtenerUsuarios?&pageNumber=1&pageSize=4",
-					"protocol": "http",
+					"raw": "https://servicioswebelaniin.azurewebsites.net/Catalogo/User/ObtenerUsuarios?&pageNumber=1&pageSize=4",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"servicioswebelaniin",
+						"azurewebsites",
+						"net"
 					],
-					"port": "61658",
 					"path": [
 						"Catalogo",
 						"User",
@@ -73,12 +74,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:61658/Catalogo/User/Login?email=admin@gmail.com&password=adminpass",
-					"protocol": "http",
+					"raw": "https://servicioswebelaniin.azurewebsites.net/Catalogo/User/Login?email=franciscocruz2610@gmail.com&password=adminpass",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"servicioswebelaniin",
+						"azurewebsites",
+						"net"
 					],
-					"port": "61658",
 					"path": [
 						"Catalogo",
 						"User",
@@ -87,7 +89,7 @@
 					"query": [
 						{
 							"key": "email",
-							"value": "admin@gmail.com"
+							"value": "franciscocruz2610@gmail.com"
 						},
 						{
 							"key": "password",
@@ -106,7 +108,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"username\": \"farkas\",\r\n  \"password\": \"1234\",\r\n  \"name\": \"francisco\",\r\n  \"number\": \"1234\",\r\n  \"birthdate\": \"2020-11-11\",\r\n  \"email\": \"franciscocruz@gmail.com\",\r\n  \"token\": \"null\"\r\n}",
+					"raw": "{\r\n  \"username\": \"azureTest\",\r\n  \"password\": \"1234\",\r\n  \"name\": \"Azure test\",\r\n  \"number\": \"1234\",\r\n  \"birthdate\": \"2020-11-11\",\r\n  \"email\": \"azure@gmail.com\",\r\n  \"token\": \"null\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -114,12 +116,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:61658/Catalogo/User/Registro",
-					"protocol": "http",
+					"raw": "https://servicioswebelaniin.azurewebsites.net/Catalogo/User/Registro",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"servicioswebelaniin",
+						"azurewebsites",
+						"net"
 					],
-					"port": "61658",
 					"path": [
 						"Catalogo",
 						"User",
@@ -136,12 +139,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:61658/Catalogo/User/Recuperacion?emailDestino=franciscocruz2610@gmail.com&emailOrigen=ingresar un correo gmail de pruebas&password=ingresar contraseña",
-					"protocol": "http",
+					"raw": "https://servicioswebelaniin.azurewebsites.net/Catalogo/User/Recuperacion?emailDestino=franciscocruz2610@gmail.com&emailOrigen=ingresar correo&password=ingresar contraseña",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"servicioswebelaniin",
+						"azurewebsites",
+						"net"
 					],
-					"port": "61658",
 					"path": [
 						"Catalogo",
 						"User",
@@ -154,7 +158,7 @@
 						},
 						{
 							"key": "emailOrigen",
-							"value": "ingresar un correo gmail de pruebas"
+							"value": "ingresar correo"
 						},
 						{
 							"key": "password",
@@ -173,7 +177,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"id\": 2,\r\n  \"username\": \"farkas\",\r\n  \"password\": \"123admin\",\r\n  \"name\": \"francisco\",\r\n  \"number\": 12345,\r\n  \"birthdate\": \"2020-11-11\",\r\n  \"email\": \"francisco@gmail.com\",\r\n  \"token\": \"null\"\r\n}",
+					"raw": "{\r\n  \"id\": 3,\r\n  \"username\": \"farkas26\",\r\n  \"password\": \"123admin\",\r\n  \"name\": \"francisco\",\r\n  \"number\": 12345,\r\n  \"birthdate\": \"2020-11-11\",\r\n  \"email\": \"francisco@gmail.com\",\r\n  \"token\": \"null\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -181,12 +185,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:61658/Catalogo/User/ModificarUsuario",
-					"protocol": "http",
+					"raw": "https://servicioswebelaniin.azurewebsites.net/Catalogo/User/ModificarUsuario",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"servicioswebelaniin",
+						"azurewebsites",
+						"net"
 					],
-					"port": "61658",
 					"path": [
 						"Catalogo",
 						"User",
@@ -203,12 +208,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:61658/Catalogo/User/EliminarUsuario?id=2",
-					"protocol": "http",
+					"raw": "https://servicioswebelaniin.azurewebsites.net/Catalogo/User/EliminarUsuario?id=4",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"servicioswebelaniin",
+						"azurewebsites",
+						"net"
 					],
-					"port": "61658",
 					"path": [
 						"Catalogo",
 						"User",
@@ -217,7 +223,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "2"
+							"value": "4"
 						}
 					]
 				},
@@ -231,12 +237,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:61658/Catalogo/Producto/ObtenerProductos?&pageNumber=1&pageSize=5",
+					"raw": "http://servicioswebelaniin.azurewebsites.net/Catalogo/Producto/ObtenerProductos?&pageNumber=1&pageSize=5",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"servicioswebelaniin",
+						"azurewebsites",
+						"net"
 					],
-					"port": "61658",
 					"path": [
 						"Catalogo",
 						"Producto",
@@ -268,7 +275,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"sku\": \"K123\",\r\n  \"nombre\": \"Audifonos\",\r\n  \"cantidad\": \"24\",\r\n  \"precio\": 12.50,\r\n  \"descripcion\": \"Audifonos Inalambricos SkullCandy\",\r\n  \"imagen\": \"QEA=\"\r\n}",
+					"raw": "{\r\n  \"sku\": \"K123\",\r\n  \"nombre\": \"alexa\",\r\n  \"cantidad\": \"25\",\r\n  \"precio\": 50,\r\n  \"descripcion\": \"alexa echo dot\",\r\n  \"imagen\": \"QEA=\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -276,12 +283,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:61658/Catalogo/Producto/Registro",
-					"protocol": "http",
+					"raw": "https://servicioswebelaniin.azurewebsites.net/Catalogo/Producto/Registro",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"servicioswebelaniin",
+						"azurewebsites",
+						"net"
 					],
-					"port": "61658",
 					"path": [
 						"Catalogo",
 						"Producto",
@@ -299,7 +307,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"id\": 2,\r\n  \"sku\": \"SK20\",\r\n  \"nombre\": \"Audifonos Skullcandy\",\r\n  \"cantidad\": \"25\",\r\n  \"precio\": 50,\r\n  \"descripcion\": \"Audifonos inalambricos Skullcandy\",\r\n  \"imagen\": \"QEA=\"\r\n}",
+					"raw": "{\r\n  \"id\": 3,\r\n  \"sku\": \"SK55\",\r\n  \"nombre\": \"Alexa\",\r\n  \"cantidad\": \"25\",\r\n  \"precio\": 50,\r\n  \"descripcion\": \"alexa color blanco\",\r\n  \"imagen\": \"QEA=\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -307,12 +315,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:61658/Catalogo/Producto/ModificarProducto",
-					"protocol": "http",
+					"raw": "https://servicioswebelaniin.azurewebsites.net/Catalogo/Producto/ModificarProducto",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"servicioswebelaniin",
+						"azurewebsites",
+						"net"
 					],
-					"port": "61658",
 					"path": [
 						"Catalogo",
 						"Producto",
@@ -329,16 +338,17 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:61658/Catalogo/Producto/EliminarProducto?id=2",
-					"protocol": "http",
+					"raw": "https://servicioswebelaniin.azurewebsites.net/Catalogo/Producto/EliminarUsuario?id=2",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"servicioswebelaniin",
+						"azurewebsites",
+						"net"
 					],
-					"port": "61658",
 					"path": [
 						"Catalogo",
 						"Producto",
-						"EliminarProducto"
+						"EliminarUsuario"
 					],
 					"query": [
 						{
@@ -357,12 +367,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:61658/Catalogo/Producto/BusquedaProductos?nombre=\"\"&SKU=sk20",
-					"protocol": "http",
+					"raw": "https://servicioswebelaniin.azurewebsites.net/Catalogo/Producto/BusquedaProductos?nombre=\"\"&SKU=sk55",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"servicioswebelaniin",
+						"azurewebsites",
+						"net"
 					],
-					"port": "61658",
 					"path": [
 						"Catalogo",
 						"Producto",
@@ -375,7 +386,7 @@
 						},
 						{
 							"key": "SKU",
-							"value": "sk20"
+							"value": "sk55"
 						}
 					]
 				},

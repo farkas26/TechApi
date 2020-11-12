@@ -1,4 +1,7 @@
-﻿using ServiciosWeb.WebApi;
+﻿using Microsoft.Owin;
+using Microsoft.Owin.Security.OAuth;
+using Owin;
+using ServiciosWeb.WebApi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +23,6 @@ namespace ServiciosWeb.WebApi
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-        }
+        }     
     }
 }

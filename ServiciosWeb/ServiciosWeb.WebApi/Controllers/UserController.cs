@@ -18,7 +18,7 @@ namespace ServiciosWeb.WebApi.Controllers
 {
     public class UserController : ApiController
     {
-        private string urlDomain = "http://localhost:61658";
+        private string urlDomain = "https://servicioswebelaniin.azurewebsites.net";
 
         [HttpGet]
         [Route("Catalogo/User/ObtenerUsuarios")]
@@ -82,6 +82,7 @@ namespace ServiciosWeb.WebApi.Controllers
                         var token = Guid.NewGuid().ToString();
                         Login user = registro.First();
                         user.token = token;
+                        user.number = user.number.TrimEnd();
                         db.Entry(user).State = System.Data.Entity.EntityState.Modified;
                         db.SaveChanges();
                         mensaje = "Ingreso de forma correcta";                        
@@ -104,7 +105,7 @@ namespace ServiciosWeb.WebApi.Controllers
                     {
                         Trace.TraceInformation("Property: {0} Error: {1}",
                             validationError.PropertyName,
-                            validationError.ErrorMessage);
+                            mensaje = validationError.ErrorMessage);
                     }
                 }
             {

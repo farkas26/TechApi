@@ -1,0 +1,12 @@
+C:\Users\trejcruz\Documents\TechApi\ServiciosWeb\ServiciosWeb.Data\bin\Release\ServiciosWeb.Data.dll.config
+C:\Users\trejcruz\Documents\TechApi\ServiciosWeb\ServiciosWeb.Data\bin\Release\ServiciosWeb.Data.dll
+C:\Users\trejcruz\Documents\TechApi\ServiciosWeb\ServiciosWeb.Data\bin\Release\ServiciosWeb.Data.pdb
+C:\Users\trejcruz\Documents\TechApi\ServiciosWeb\ServiciosWeb.Data\bin\Release\EntityFramework.dll
+C:\Users\trejcruz\Documents\TechApi\ServiciosWeb\ServiciosWeb.Data\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\trejcruz\Documents\TechApi\ServiciosWeb\ServiciosWeb.Data\bin\Release\EntityFramework.xml
+C:\Users\trejcruz\Documents\TechApi\ServiciosWeb\ServiciosWeb.Data\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\trejcruz\Documents\TechApi\ServiciosWeb\ServiciosWeb.Data\obj\Release\ServiciosWeb.Data.csprojAssemblyReference.cache
+C:\Users\trejcruz\Documents\TechApi\ServiciosWeb\ServiciosWeb.Data\obj\Release\ServiciosWeb.Data.csproj.CoreCompileInputs.cache
+C:\Users\trejcruz\Documents\TechApi\ServiciosWeb\ServiciosWeb.Data\obj\Release\ServiciosWeb.Data.csproj.CopyComplete
+C:\Users\trejcruz\Documents\TechApi\ServiciosWeb\ServiciosWeb.Data\obj\Release\ServiciosWeb.Data.dll
+C:\Users\trejcruz\Documents\TechApi\ServiciosWeb\ServiciosWeb.Data\obj\Release\ServiciosWeb.Data.pdb
