@@ -1,0 +1,15 @@
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\bin\Debug\BussinessLogic.dll.config
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\bin\Debug\BussinessLogic.dll
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\bin\Debug\BussinessLogic.pdb
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\bin\Debug\ServiciosWeb.Data.dll
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\bin\Debug\ServiciosWeb.Data.pdb
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\bin\Debug\ServiciosWeb.Data.dll.config
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\obj\Debug\BussinessLogic.csprojAssemblyReference.cache
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\obj\Debug\BussinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\obj\Debug\BussinessLogic.csproj.CopyComplete
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\obj\Debug\BussinessLogic.dll
+C:\Users\trejcruz\source\repos\ServiciosWeb\BussinessLogic\obj\Debug\BussinessLogic.pdb

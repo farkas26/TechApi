@@ -1,0 +1,12 @@
+C:\Users\trejcruz\source\repos\ServiciosWeb\ServiciosWeb.Data\bin\Debug\ServiciosWeb.Data.dll.config
+C:\Users\trejcruz\source\repos\ServiciosWeb\ServiciosWeb.Data\bin\Debug\ServiciosWeb.Data.dll
+C:\Users\trejcruz\source\repos\ServiciosWeb\ServiciosWeb.Data\bin\Debug\ServiciosWeb.Data.pdb
+C:\Users\trejcruz\source\repos\ServiciosWeb\ServiciosWeb.Data\bin\Debug\EntityFramework.dll
+C:\Users\trejcruz\source\repos\ServiciosWeb\ServiciosWeb.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\trejcruz\source\repos\ServiciosWeb\ServiciosWeb.Data\bin\Debug\EntityFramework.xml
+C:\Users\trejcruz\source\repos\ServiciosWeb\ServiciosWeb.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\trejcruz\source\repos\ServiciosWeb\ServiciosWeb.Data\obj\Debug\ServiciosWeb.Data.csproj.CoreCompileInputs.cache
+C:\Users\trejcruz\source\repos\ServiciosWeb\ServiciosWeb.Data\obj\Debug\ServiciosWeb.Data.csproj.CopyComplete
+C:\Users\trejcruz\source\repos\ServiciosWeb\ServiciosWeb.Data\obj\Debug\ServiciosWeb.Data.dll
+C:\Users\trejcruz\source\repos\ServiciosWeb\ServiciosWeb.Data\obj\Debug\ServiciosWeb.Data.pdb
+C:\Users\trejcruz\source\repos\ServiciosWeb\ServiciosWeb.Data\obj\Debug\ServiciosWeb.Data.csprojAssemblyReference.cache
