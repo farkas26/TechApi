@@ -10,6 +10,9 @@ using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Text;
 using System.Net.Mail;
+using ServiciosWeb.WebApi.Models;
+using System.Web;
+using Newtonsoft.Json;
 
 namespace ServiciosWeb.WebApi.Controllers
 {
@@ -20,17 +23,36 @@ namespace ServiciosWeb.WebApi.Controllers
         [HttpGet]
         [Route("Catalogo/User/ObtenerUsuarios")]
         [ActionName("ObtenerUsuarios")]
-        public GenericListResponse<Login> GetAll()
+        public GenericListResponse<Login> GetAll([FromUri]PagingParameterModel pagingparametermodel)
         {
             GenericListResponse<Login> response;
             BPM_SIEEntities BD = new BPM_SIEEntities();
+            var source = BD.Login.ToList();
+            int count = source.Count();
+            int CurrentPage = pagingparametermodel.pageNumber;
+            int PageSize = pagingparametermodel.pageSize;
+            int TotalCount = count;
+            int TotalPages = (int)Math.Ceiling(count / (double)PageSize);
+            var items = source.Skip((CurrentPage - 1) * PageSize).Take(PageSize).ToList();
+            var previousPage = CurrentPage > 1 ? "Yes" : "No";
+            var nextPage = CurrentPage < TotalPages ? "Yes" : "No";
+            var paginationMetadata = new
+            {
+                totalCount = TotalCount,
+                pageSize = PageSize,
+                currentPage = CurrentPage,
+                totalPages = TotalPages,
+                previousPage,
+                nextPage
+            };
+            HttpContext.Current.Response.Headers.Add("Paging-Headers", JsonConvert.SerializeObject(paginationMetadata));
             try
             {
                 response = new GenericListResponse<Login>
                 {
                     Status = new ResponseStatus { HttpCode = HttpStatusCode.OK },
-                    Items = BD.Login.ToList()
-            };
+                    Items = items
+                };
             }
             catch (Exception ex)
             {

@@ -6,19 +6,69 @@
 	},
 	"item": [
 		{
-			"name": "ObtenerUsuarios",
+			"name": "Obtener Usuarios con paginación",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:61658/Catalogo/User/ObtenerUsuarios?&pageNumber=1&pageSize=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61658",
+					"path": [
+						"Catalogo",
+						"User",
+						"ObtenerUsuarios"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "4"
+						}
+					]
 				},
 				"description": "Obtiene todos los usuarios registrados a la fecha"
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost:61658/Catalogo/User/Login?email=admin@gmail.com&password=adminpass",
+			"name": "Login Usuario",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -50,7 +100,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:61658/Catalogo/User/Registro",
+			"name": "Registro de nuevo Usuario",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -81,7 +131,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:61658/Catalogo/User/Recuperacion?emailDestino=franciscocruz2610@gmail.com&emailOrigen=ingresar un correo gmail de pruebas&password=ingresar contraseña",
+			"name": "Recuperacion de Contraseña",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -117,7 +167,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:61658/Catalogo/User/ModificarUsuario",
+			"name": "Modificacion de Usuario",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -148,7 +198,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:61658/Catalogo/User/EliminarUsuario?id=2",
+			"name": "Eliminación de usuario",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -176,12 +226,12 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:61658/Catalogo/Producto/ObtenerProductos",
+			"name": "Obtener Productos con paginación",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:61658/Catalogo/Producto/ObtenerProductos",
+					"raw": "http://localhost:61658/Catalogo/Producto/ObtenerProductos?&pageNumber=1&pageSize=5",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -191,6 +241,20 @@
 						"Catalogo",
 						"Producto",
 						"ObtenerProductos"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						}
 					]
 				},
 				"description": "Obtiene todos los productos registrados en la base de datos"
@@ -198,7 +262,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:61658/Catalogo/Producto/Registro",
+			"name": "Registro de nuevo producto",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -229,7 +293,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:61658/Catalogo/Producto/ModificarProducto",
+			"name": "Modificación de producto",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -260,7 +324,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:61658/Catalogo/Producto/EliminarProducto?id=2",
+			"name": "Eliminación de producto",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -288,7 +352,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:61658/Catalogo/Producto/BusquedaProductos?nombre=\"\"&SKU=sk20",
+			"name": "Busqueda de productos por Nombre o SKU",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -315,7 +379,7 @@
 						}
 					]
 				},
-				"description": "Busqueda de productos por nombre o por SKU, case sensitive"
+				"description": "La busqueda de productos es case sensitive"
 			},
 			"response": []
 		}

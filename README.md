@@ -19,3 +19,4 @@ Correr el Script llamado MIGRATION_20201111_SQL.sql Ubicado en la carpeta TechAp
 #Coleccion Postman#
 Url publica de la coleccion : https://www.postman.com/collections/e610a54288a73174295c
 Ademas se agrego un archivo json en el repositorio por si no se puede visualizar la URL, el archivo se encuentra en la ruta origen del repositorio: TechCollection.postman_collection.json 
+Documentacion de la coleccion de Postman: https://documenter.getpostman.com/view/13457850/TVemCVav
